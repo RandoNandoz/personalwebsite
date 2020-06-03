@@ -60,8 +60,7 @@ node_modules/
 .env
 
 # Intellisense for Bootstrap 4
-src/css
-src/js
+intellisense/
 
 # .vscode folder
 .vscode/
