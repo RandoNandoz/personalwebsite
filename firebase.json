@@ -12,12 +12,12 @@
         "destination": "/index.html"
       }
     ]
-  },
-  "appAssociation": "AUTO",
-  "rewrites": [
-    {
-      "source": "/blob/**",
-      "dynamicLinks": true
-    }
-  ]
+    "appAssociation": "AUTO",
+    "rewrites": [
+      {
+        "source": "/blob/**",
+        "dynamicLinks": true
+      }
+    ]
+  }
 }
