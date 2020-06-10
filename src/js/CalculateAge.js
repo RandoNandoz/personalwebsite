@@ -3,6 +3,7 @@
  * @param {number} birthDateUnixTimestamp Is the user's age in Unix time.
  */
 
+// *Slaps roof of truck* this bad boy function will last me even if I die.
 function getAge(birthDateUnixTimestamp) {
     const date = new Date();
 
@@ -14,13 +15,16 @@ function getAge(birthDateUnixTimestamp) {
     let unixAge = currentUnixTime - birthDateUnixTimestamp
 
     // Converts Unix time to years, then rounds accordingly.
-    
-    // Close enough... 
+
+    // Close enough... Probably will lose accuracy in centuries.
     let secondsInYear = 3.154e+7
 
     let age = Math.floor(unixAge / secondsInYear)
 
-    console.log(`The user's age is ${age} years old`);
+    console.log(`The developer's age is ${age} years old`);
 
-    return age    
+    document.getElementById("age").innerHTML = age
 }
+
+// 1122940800 is my birthday in Unix time. 2005/08/02 00:00
+getAge(1122940800)

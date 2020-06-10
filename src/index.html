@@ -26,7 +26,7 @@
         <![endif]-->
 
     <!-- #region Navbar -->
-    <nav class="navbar navbar-expand-sm navbar-light bg-light" style="opacity: 0.6;">
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
         <a class="navbar-brand" href="index.html">Randy's Website</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupport">
@@ -58,6 +58,12 @@
                         <span class="sr-only">(current)</span>
                     </a>
                 </li>
+                <li class="nav-item active">
+                    <a class="nav-link btn btn-outline-primary" href="privacypolicy.html">
+                        Privacy Policy
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
             </ul>
         </div>
     </nav>
@@ -76,8 +82,9 @@
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title">Who am I?</h5>
-                            <p class="card-text text-justify justify-content-start">
-                                Hello, I am randy, and I'm from Vancouver, British Columbia. I'm <script>getAge(1122965999);</script> years old
+                            <p class="card-text">
+                                Hi, my name is Randy Zhu, I'm <!-- *Slaps roof of truck* This bad boy will last me beyond death.  --> <span id="age"></span> a year old developer from
+                                Vancouver. I'm passionate to work on the things I enjoy.
                             </p>
                         </div>
                     </div>
@@ -115,7 +122,7 @@
 
     <!-- #region Developer's JS -->
 
-    <script src="js/agecalculations.js" async defer></script>
+    <script src="js/CalculateAge.js" async defer></script>
 
     <!-- #endregion Developer's JS -->
 </body>
