@@ -16,7 +16,7 @@ function getAge(birthDateUnixTimestamp) {
 
     // Converts Unix time to years, then rounds accordingly.
 
-    // Close enough... Probably will lose accuracy in centuries.
+    // Close enough... Probably will lose accuracy within centuries.
     let secondsInYear = 3.154e+7
 
     let age = Math.floor(unixAge / secondsInYear)
@@ -26,5 +26,5 @@ function getAge(birthDateUnixTimestamp) {
     document.getElementById("age").innerHTML = age
 }
 
-// 1122940800 is my birthday in Unix time. 2005/08/02 00:00
-getAge(1122940800)
+// 1122940800 is my birthday in Unix time. 2005/08/02, 14:44 PDT
+getAge(1122993840)
