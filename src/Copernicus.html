@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Copernicus</title>
+    <script src="WebGLSolarCopernicus/Build/UnityLoader.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/globalFont.css">
+    <script src="blob/WebGLSolarCopernicus/Build/UnityLoader.js"></script>
+    <script>
+        UnityLoader.instantiate("unityContainer", "blob/WebGLSolarCopernicus/Build/releasebuild.json");
+    </script>
+</head>
+
+<body class="globalFont">
+    <!-- #region Navbar -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Randy's Website</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupport">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link btn btn-outline-primary" href="index.html">
+                        Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle btn btn-outline-primary" href="aboutme.html" id="navbarDropdown"
+                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        About Me
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="resume.html">Resume</a>
+                        <a class="dropdown-item" href="portfolio.html">Portfolio</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="biography.html">Bio</a>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link btn btn-outline-primary" href="contactinfo.html">
+                        Contact
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link btn btn-outline-primary" href="privacypolicy.html">
+                        Privacy Policy
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- #endregion Navbar -->
+    <div class="jumbotron-fluid text-justify text-center">
+        <h1>Interactive Copernican Model of the Solar System</h1>
+    </div>
+    <div class="container">
+        <div class="card w-100">
+            <a class="btn btn-info float-none" data-toggle="collapse" href="#opencontrols" role="button"
+                aria-expanded="false" aria-controls="opencontrols">Controls:</a>
+            <div class="collapse " id="opencontrols">
+                <p class="card card-body">Move forward: W <br>
+                    Move backwards: S <br>
+                    Move left: A <br>
+                    Move right: D <br>
+                    Rotate camera up: Up Arrow <br>
+                    Rotate camera down: Down Arrow <br>
+                    Rotate camera left: Left Arrow <br>
+                    Rotate camera right: Right Arrow <br>
+                    Move up: Left Shift <br>
+                    Move Down: Left Control <br>
+                    Exit interactive: Esc <br>
+                    Reset Scene: R <br>
+                    <em>This demo must be run on a desktop / laptop.</em>
+                </p>
+            </div>
+        </div>
+
+        <div id="unityContainer" style=" margin: auto"></div>
+
+    </div>
+    </div>
+    <div class="container">
+        <div class="card">
+            <h3 class="card-title text-justify text-center">Copernican Astronomical Theory:</h3>
+            <div class="card-body">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <b>Who was Copernicus?</b><br>
+                        Nicolaus Copernicus was a polish astronomer, mathematician, and philosopher. He was born on the
+                        19th of February, 1483CE, and passed on the 24th of May, 1543CE. He was most known for his model
+                        of the solar system, which contradicted the teachings of past.
+                    </li>
+                    <li class="list-group-item">
+                        <b>What did he do?</b><br>
+                        He was most known for his theory of a heliocentric solar system, instead of a geocentric one.
+                        <br>
+                        Geocentric views were the consensus in the past, before the works of Copernicus and Galileo.
+                        These (geocentric) views were theorized by Ptolemy and the astronomers before him. He is
+                        considered one of
+                        the philosophers of the humanist/renaissance era, and he
+                    </li>
+                    <li class="list-group-item">
+                        <b>Heliocentrism vs Geocentrism</b><br>
+                        Heliocentrism, from greek "Helios", meaning sun, and kentron, meaning center, from this
+                        etymological breakdown, we can see that heliocentrism is the idea that the sun is the center.
+                        Geocentrism, from geo, meaning Earth / land, and centrism, meaning Earth centered. These two
+                        theories were conceived by man different philosophers, from many different cultures. For the
+                        majority of history, the geocentric model was the consensus. From the Inuit hunters in the high
+                        arctic of Canada, to the scientists in the Umayyad Islamic empire. 
+                    </li>
+                    <li class="list-group-item">
+                        <b>What was his legacy?</b><br>
+                        Our current understanding of the solar system is a modified copernican heliocentric model;
+                        Copernicus also hypothesized that the rotation of the Earth was what led to a day / night cycle.
+                        In the modern day, we observed the Earth, and his ideas of the Earth spinning were confirmed.
+                        Copernicus also inspired Galileo, another famous astronomer, mathematician, and philosopher, but
+                        unlike Copernicus, Galileo was very public about his work, and was condemned by the Catholic
+                        Church at the time.
+                    </li>
+                    <li class="list-group-item">
+                        <b>What did he get wrong?</b><br>
+                        His heliocentric hypothesis stated that the planets revolved in perfect circles.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- #region Random JS -->
+    <script src="/__/firebase/7.14.6/firebase-app.js"></script>
+    <script src="/__/firebase/7.14.6/firebase-analytics.js"></script>
+    <script src="/__/firebase/init.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <!-- #endregion Random JS -->
+
+</body>
+
+</html>
